@@ -43,6 +43,7 @@ class UsersList extends LitElement {
   }
 
   render() {
+    console.log(this.users);
     return html`
       <div class="row">
         <div class="column">
@@ -58,6 +59,10 @@ class UsersList extends LitElement {
       </div>
     `;
   }
+
+
+
 }
+
 // Register the new element with the browser.
 customElements.define('users-list', UsersList);
